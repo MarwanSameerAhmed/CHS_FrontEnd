@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.SideMenuPanel = new System.Windows.Forms.Panel();
+            this.EmergencyDepBtn = new FontAwesome.Sharp.IconButton();
+            this.PharmacyDepBtn = new FontAwesome.Sharp.IconButton();
             this.LabDepSubMenu = new System.Windows.Forms.Panel();
             this.LabDepSearchBtn = new FontAwesome.Sharp.IconButton();
             this.LabDepBtn = new FontAwesome.Sharp.IconButton();
@@ -51,8 +53,6 @@
             this.lebJobName = new System.Windows.Forms.Label();
             this.pictureBoxUserName = new System.Windows.Forms.PictureBox();
             this.labUserName = new System.Windows.Forms.Label();
-            this.PharmacyDepBtn = new FontAwesome.Sharp.IconButton();
-            this.EmergencyDepBtn = new FontAwesome.Sharp.IconButton();
             this.SideMenuPanel.SuspendLayout();
             this.LabDepSubMenu.SuspendLayout();
             this.EmployeesSubMenu.SuspendLayout();
@@ -67,7 +67,7 @@
             // SideMenuPanel
             // 
             this.SideMenuPanel.AutoScroll = true;
-            this.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
+            this.SideMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
             this.SideMenuPanel.Controls.Add(this.EmergencyDepBtn);
             this.SideMenuPanel.Controls.Add(this.PharmacyDepBtn);
             this.SideMenuPanel.Controls.Add(this.LabDepSubMenu);
@@ -86,14 +86,54 @@
             this.SideMenuPanel.Size = new System.Drawing.Size(250, 829);
             this.SideMenuPanel.TabIndex = 0;
             // 
+            // EmergencyDepBtn
+            // 
+            this.EmergencyDepBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.EmergencyDepBtn.FlatAppearance.BorderSize = 0;
+            this.EmergencyDepBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EmergencyDepBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmergencyDepBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.EmergencyDepBtn.IconChar = FontAwesome.Sharp.IconChar.PersonCircleCheck;
+            this.EmergencyDepBtn.IconColor = System.Drawing.Color.White;
+            this.EmergencyDepBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.EmergencyDepBtn.IconSize = 40;
+            this.EmergencyDepBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EmergencyDepBtn.Location = new System.Drawing.Point(0, 790);
+            this.EmergencyDepBtn.Name = "EmergencyDepBtn";
+            this.EmergencyDepBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.EmergencyDepBtn.Size = new System.Drawing.Size(229, 55);
+            this.EmergencyDepBtn.TabIndex = 11;
+            this.EmergencyDepBtn.Text = "إدارة قسم الطوارى";
+            this.EmergencyDepBtn.UseVisualStyleBackColor = true;
+            // 
+            // PharmacyDepBtn
+            // 
+            this.PharmacyDepBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PharmacyDepBtn.FlatAppearance.BorderSize = 0;
+            this.PharmacyDepBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PharmacyDepBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PharmacyDepBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.PharmacyDepBtn.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            this.PharmacyDepBtn.IconColor = System.Drawing.Color.White;
+            this.PharmacyDepBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PharmacyDepBtn.IconSize = 40;
+            this.PharmacyDepBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PharmacyDepBtn.Location = new System.Drawing.Point(0, 735);
+            this.PharmacyDepBtn.Name = "PharmacyDepBtn";
+            this.PharmacyDepBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.PharmacyDepBtn.Size = new System.Drawing.Size(229, 55);
+            this.PharmacyDepBtn.TabIndex = 10;
+            this.PharmacyDepBtn.Text = "قسم الصيدلية";
+            this.PharmacyDepBtn.UseVisualStyleBackColor = true;
+            // 
             // LabDepSubMenu
             // 
             this.LabDepSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
             this.LabDepSubMenu.Controls.Add(this.LabDepSearchBtn);
             this.LabDepSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LabDepSubMenu.Location = new System.Drawing.Point(0, 503);
+            this.LabDepSubMenu.Location = new System.Drawing.Point(0, 682);
             this.LabDepSubMenu.Name = "LabDepSubMenu";
-            this.LabDepSubMenu.Size = new System.Drawing.Size(250, 53);
+            this.LabDepSubMenu.Size = new System.Drawing.Size(229, 53);
             this.LabDepSubMenu.TabIndex = 9;
             // 
             // LabDepSearchBtn
@@ -111,7 +151,7 @@
             this.LabDepSearchBtn.Location = new System.Drawing.Point(0, 0);
             this.LabDepSearchBtn.Name = "LabDepSearchBtn";
             this.LabDepSearchBtn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.LabDepSearchBtn.Size = new System.Drawing.Size(250, 45);
+            this.LabDepSearchBtn.Size = new System.Drawing.Size(229, 55);
             this.LabDepSearchBtn.TabIndex = 6;
             this.LabDepSearchBtn.Text = "البحث عن مريض";
             this.LabDepSearchBtn.UseVisualStyleBackColor = true;
@@ -128,10 +168,10 @@
             this.LabDepBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.LabDepBtn.IconSize = 40;
             this.LabDepBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabDepBtn.Location = new System.Drawing.Point(0, 454);
+            this.LabDepBtn.Location = new System.Drawing.Point(0, 627);
             this.LabDepBtn.Name = "LabDepBtn";
             this.LabDepBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.LabDepBtn.Size = new System.Drawing.Size(250, 49);
+            this.LabDepBtn.Size = new System.Drawing.Size(229, 55);
             this.LabDepBtn.TabIndex = 8;
             this.LabDepBtn.Text = "قسم المختبرات";
             this.LabDepBtn.UseVisualStyleBackColor = true;
@@ -149,10 +189,10 @@
             this.SystemBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SystemBtn.IconSize = 40;
             this.SystemBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SystemBtn.Location = new System.Drawing.Point(0, 731);
+            this.SystemBtn.Location = new System.Drawing.Point(0, 845);
             this.SystemBtn.Name = "SystemBtn";
             this.SystemBtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.SystemBtn.Size = new System.Drawing.Size(250, 49);
+            this.SystemBtn.Size = new System.Drawing.Size(229, 49);
             this.SystemBtn.TabIndex = 7;
             this.SystemBtn.Text = "الاعدادات";
             this.SystemBtn.UseVisualStyleBackColor = true;
@@ -169,10 +209,10 @@
             this.LogOutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.LogOutBtn.IconSize = 40;
             this.LogOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LogOutBtn.Location = new System.Drawing.Point(0, 780);
+            this.LogOutBtn.Location = new System.Drawing.Point(0, 894);
             this.LogOutBtn.Name = "LogOutBtn";
             this.LogOutBtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.LogOutBtn.Size = new System.Drawing.Size(250, 49);
+            this.LogOutBtn.Size = new System.Drawing.Size(229, 49);
             this.LogOutBtn.TabIndex = 6;
             this.LogOutBtn.Text = "تسجيل الخروج";
             this.LogOutBtn.UseVisualStyleBackColor = true;
@@ -183,9 +223,9 @@
             this.EmployeesSubMenu.Controls.Add(this.EmployessSearchBtn);
             this.EmployeesSubMenu.Controls.Add(this.EmployessAddBtn);
             this.EmployeesSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.EmployeesSubMenu.Location = new System.Drawing.Point(0, 359);
+            this.EmployeesSubMenu.Location = new System.Drawing.Point(0, 532);
             this.EmployeesSubMenu.Name = "EmployeesSubMenu";
-            this.EmployeesSubMenu.Size = new System.Drawing.Size(250, 95);
+            this.EmployeesSubMenu.Size = new System.Drawing.Size(229, 95);
             this.EmployeesSubMenu.TabIndex = 5;
             // 
             // EmployessSearchBtn
@@ -203,7 +243,7 @@
             this.EmployessSearchBtn.Location = new System.Drawing.Point(0, 45);
             this.EmployessSearchBtn.Name = "EmployessSearchBtn";
             this.EmployessSearchBtn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.EmployessSearchBtn.Size = new System.Drawing.Size(250, 45);
+            this.EmployessSearchBtn.Size = new System.Drawing.Size(229, 45);
             this.EmployessSearchBtn.TabIndex = 7;
             this.EmployessSearchBtn.Text = "البحث عن موظف";
             this.EmployessSearchBtn.UseVisualStyleBackColor = true;
@@ -223,7 +263,7 @@
             this.EmployessAddBtn.Location = new System.Drawing.Point(0, 0);
             this.EmployessAddBtn.Name = "EmployessAddBtn";
             this.EmployessAddBtn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.EmployessAddBtn.Size = new System.Drawing.Size(250, 45);
+            this.EmployessAddBtn.Size = new System.Drawing.Size(229, 45);
             this.EmployessAddBtn.TabIndex = 6;
             this.EmployessAddBtn.Text = "إضافة موظف ";
             this.EmployessAddBtn.UseVisualStyleBackColor = true;
@@ -240,10 +280,10 @@
             this.EmployeesManagementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EmployeesManagementBtn.IconSize = 40;
             this.EmployeesManagementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmployeesManagementBtn.Location = new System.Drawing.Point(0, 310);
+            this.EmployeesManagementBtn.Location = new System.Drawing.Point(0, 477);
             this.EmployeesManagementBtn.Name = "EmployeesManagementBtn";
             this.EmployeesManagementBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.EmployeesManagementBtn.Size = new System.Drawing.Size(250, 49);
+            this.EmployeesManagementBtn.Size = new System.Drawing.Size(229, 55);
             this.EmployeesManagementBtn.TabIndex = 4;
             this.EmployeesManagementBtn.Text = "إدارة الموظفين";
             this.EmployeesManagementBtn.UseVisualStyleBackColor = true;
@@ -255,9 +295,9 @@
             this.PatientsubMenuPanel.Controls.Add(this.PatientSearchFrmBtn);
             this.PatientsubMenuPanel.Controls.Add(this.patientAddFrmBtn);
             this.PatientsubMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PatientsubMenuPanel.Location = new System.Drawing.Point(0, 215);
+            this.PatientsubMenuPanel.Location = new System.Drawing.Point(0, 382);
             this.PatientsubMenuPanel.Name = "PatientsubMenuPanel";
-            this.PatientsubMenuPanel.Size = new System.Drawing.Size(250, 95);
+            this.PatientsubMenuPanel.Size = new System.Drawing.Size(229, 95);
             this.PatientsubMenuPanel.TabIndex = 3;
             // 
             // PatientSearchFrmBtn
@@ -275,7 +315,7 @@
             this.PatientSearchFrmBtn.Location = new System.Drawing.Point(0, 45);
             this.PatientSearchFrmBtn.Name = "PatientSearchFrmBtn";
             this.PatientSearchFrmBtn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.PatientSearchFrmBtn.Size = new System.Drawing.Size(250, 45);
+            this.PatientSearchFrmBtn.Size = new System.Drawing.Size(229, 45);
             this.PatientSearchFrmBtn.TabIndex = 1;
             this.PatientSearchFrmBtn.Text = "البحث عن مريض";
             this.PatientSearchFrmBtn.UseVisualStyleBackColor = true;
@@ -296,7 +336,7 @@
             this.patientAddFrmBtn.Location = new System.Drawing.Point(0, 0);
             this.patientAddFrmBtn.Name = "patientAddFrmBtn";
             this.patientAddFrmBtn.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.patientAddFrmBtn.Size = new System.Drawing.Size(250, 45);
+            this.patientAddFrmBtn.Size = new System.Drawing.Size(229, 45);
             this.patientAddFrmBtn.TabIndex = 0;
             this.patientAddFrmBtn.Text = "إضافة ملف طبي";
             this.patientAddFrmBtn.UseVisualStyleBackColor = true;
@@ -314,10 +354,10 @@
             this.PatientManagementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.PatientManagementBtn.IconSize = 40;
             this.PatientManagementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PatientManagementBtn.Location = new System.Drawing.Point(0, 166);
+            this.PatientManagementBtn.Location = new System.Drawing.Point(0, 327);
             this.PatientManagementBtn.Name = "PatientManagementBtn";
             this.PatientManagementBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.PatientManagementBtn.Size = new System.Drawing.Size(250, 49);
+            this.PatientManagementBtn.Size = new System.Drawing.Size(229, 55);
             this.PatientManagementBtn.TabIndex = 2;
             this.PatientManagementBtn.Text = "إدارة المرضى";
             this.PatientManagementBtn.UseVisualStyleBackColor = true;
@@ -335,10 +375,10 @@
             this.MainPage.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MainPage.IconSize = 35;
             this.MainPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MainPage.Location = new System.Drawing.Point(0, 117);
+            this.MainPage.Location = new System.Drawing.Point(0, 272);
             this.MainPage.Name = "MainPage";
             this.MainPage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.MainPage.Size = new System.Drawing.Size(250, 49);
+            this.MainPage.Size = new System.Drawing.Size(229, 55);
             this.MainPage.TabIndex = 1;
             this.MainPage.Text = "الصفحة الرئيسية";
             this.MainPage.UseVisualStyleBackColor = true;
@@ -350,7 +390,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 117);
+            this.panelLogo.Size = new System.Drawing.Size(229, 272);
             this.panelLogo.TabIndex = 0;
             // 
             // label1
@@ -366,7 +406,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
             this.panel1.Controls.Add(this.HmbSizeBtn);
             this.panel1.Controls.Add(this.UserInfoPanel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -377,7 +417,7 @@
             // 
             // HmbSizeBtn
             // 
-            this.HmbSizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
+            this.HmbSizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
             this.HmbSizeBtn.IconChar = FontAwesome.Sharp.IconChar.Navicon;
             this.HmbSizeBtn.IconColor = System.Drawing.Color.White;
             this.HmbSizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -395,7 +435,7 @@
             this.UserInfoPanel.Controls.Add(this.lebJobName);
             this.UserInfoPanel.Controls.Add(this.pictureBoxUserName);
             this.UserInfoPanel.Controls.Add(this.labUserName);
-            this.UserInfoPanel.Location = new System.Drawing.Point(619, 3);
+            this.UserInfoPanel.Location = new System.Drawing.Point(512, 3);
             this.UserInfoPanel.Name = "UserInfoPanel";
             this.UserInfoPanel.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.UserInfoPanel.Size = new System.Drawing.Size(179, 45);
@@ -435,46 +475,6 @@
             this.labUserName.Size = new System.Drawing.Size(86, 20);
             this.labUserName.TabIndex = 2;
             this.labUserName.Text = "علي مرجاني";
-            // 
-            // PharmacyDepBtn
-            // 
-            this.PharmacyDepBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PharmacyDepBtn.FlatAppearance.BorderSize = 0;
-            this.PharmacyDepBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PharmacyDepBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PharmacyDepBtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.PharmacyDepBtn.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
-            this.PharmacyDepBtn.IconColor = System.Drawing.Color.White;
-            this.PharmacyDepBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.PharmacyDepBtn.IconSize = 40;
-            this.PharmacyDepBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PharmacyDepBtn.Location = new System.Drawing.Point(0, 556);
-            this.PharmacyDepBtn.Name = "PharmacyDepBtn";
-            this.PharmacyDepBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.PharmacyDepBtn.Size = new System.Drawing.Size(250, 49);
-            this.PharmacyDepBtn.TabIndex = 10;
-            this.PharmacyDepBtn.Text = "قسم الصيدلية";
-            this.PharmacyDepBtn.UseVisualStyleBackColor = true;
-            // 
-            // EmergencyDepBtn
-            // 
-            this.EmergencyDepBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.EmergencyDepBtn.FlatAppearance.BorderSize = 0;
-            this.EmergencyDepBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmergencyDepBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmergencyDepBtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.EmergencyDepBtn.IconChar = FontAwesome.Sharp.IconChar.PersonCircleCheck;
-            this.EmergencyDepBtn.IconColor = System.Drawing.Color.White;
-            this.EmergencyDepBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EmergencyDepBtn.IconSize = 40;
-            this.EmergencyDepBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmergencyDepBtn.Location = new System.Drawing.Point(0, 605);
-            this.EmergencyDepBtn.Name = "EmergencyDepBtn";
-            this.EmergencyDepBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.EmergencyDepBtn.Size = new System.Drawing.Size(250, 49);
-            this.EmergencyDepBtn.TabIndex = 11;
-            this.EmergencyDepBtn.Text = "إدارة قسم الطوارى";
-            this.EmergencyDepBtn.UseVisualStyleBackColor = true;
             // 
             // Mainfrm
             // 

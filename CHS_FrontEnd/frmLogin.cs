@@ -55,17 +55,17 @@ namespace CHS_FrontEnd
         private void textBox1_Click(object sender, EventArgs e)
         {
             UserNametxt.BackColor = Color.White;
-            panel3.BackColor = Color.White;
-            panel4.BackColor = SystemColors.Control;
+           
+            
             passwordtxt.BackColor = SystemColors.Control;
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
             passwordtxt.BackColor= Color.White;
-            panel4.BackColor= Color.White;
+           
             UserNametxt .BackColor = SystemColors.Control;
-            panel3.BackColor = SystemColors.Control;
+          
 
         }
 
@@ -107,6 +107,16 @@ namespace CHS_FrontEnd
         {
          //   patientAddingPage f = new patientAddingPage();
           //  f.ShowDialog();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
         }
     }
 }

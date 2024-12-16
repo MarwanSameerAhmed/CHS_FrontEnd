@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,10 @@ namespace CHS_FrontEnd
     public partial class Mainfrm : Form
     {
         private DockPanel dockPanel;
-        
+     
         private Form currentForm = null;
         private bool isCollapsed = false;
-     
+
 
 
         public Mainfrm()
@@ -33,8 +34,9 @@ namespace CHS_FrontEnd
             this.Controls.Add(dockPanel);
             dockPanel.BringToFront();
 
-
         }
+
+
 
 
 
@@ -128,13 +130,13 @@ namespace CHS_FrontEnd
 
         private void patientAddFrmBtn_Click(object sender, EventArgs e)
         {
-            OpenForm(new patientAddingPage(dockPanel));
+            OpenForm(new addingPatientFrm(dockPanel));
             hideSub();
         }
 
         private void PatientSearchFrmBtn_Click(object sender, EventArgs e)
         {
-          //  OpenForm(new employeeManagementPage(dockPanel));
+           OpenForm(new searchPatientFrm(dockPanel));
             hideSub();
 
         }
@@ -183,6 +185,11 @@ namespace CHS_FrontEnd
         private void MainPage_Click(object sender, EventArgs e)
         {
             show();
+        }
+
+        private void EmergencyDepBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
