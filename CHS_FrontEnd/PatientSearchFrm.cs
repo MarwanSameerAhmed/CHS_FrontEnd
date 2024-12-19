@@ -47,5 +47,10 @@ namespace CHS_FrontEnd
             searchPatientView.Rows.Add("حسين عادل", "711567432", 47, "عمران", "1009");
             searchPatientView.Rows.Add("نور الهدى عمر", "774321789", 22, "المهرة", "1010");
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
