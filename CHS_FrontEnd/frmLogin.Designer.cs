@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.passwordtxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.UserNametxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Closebtn = new System.Windows.Forms.Button();
-            this.UserNametxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.passwordtxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -110,6 +110,91 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
+            this.linkLabel1.Location = new System.Drawing.Point(143, 420);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(115, 17);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "نسيت كلمة المرور";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
+            this.guna2Button1.Location = new System.Drawing.Point(107, 361);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 9;
+            this.guna2Button1.Text = "دخول";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // passwordtxt
+            // 
+            this.passwordtxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
+            this.passwordtxt.BorderRadius = 10;
+            this.passwordtxt.BorderThickness = 2;
+            this.passwordtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordtxt.DefaultText = "";
+            this.passwordtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passwordtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passwordtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.passwordtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordtxt.IconRight = global::CHS_FrontEnd.Properties.Resources.padlock__1_1;
+            this.passwordtxt.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.passwordtxt.Location = new System.Drawing.Point(63, 285);
+            this.passwordtxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.passwordtxt.Name = "passwordtxt";
+            this.passwordtxt.PasswordChar = '1';
+            this.passwordtxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.passwordtxt.PlaceholderText = "كلمة المرور";
+            this.passwordtxt.SelectedText = "";
+            this.passwordtxt.Size = new System.Drawing.Size(266, 48);
+            this.passwordtxt.TabIndex = 8;
+            this.passwordtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // UserNametxt
+            // 
+            this.UserNametxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(77)))), ((int)(((byte)(146)))));
+            this.UserNametxt.BorderRadius = 10;
+            this.UserNametxt.BorderThickness = 2;
+            this.UserNametxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UserNametxt.DefaultText = "";
+            this.UserNametxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.UserNametxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.UserNametxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UserNametxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UserNametxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UserNametxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UserNametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UserNametxt.IconRight = global::CHS_FrontEnd.Properties.Resources.user;
+            this.UserNametxt.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.UserNametxt.Location = new System.Drawing.Point(63, 229);
+            this.UserNametxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UserNametxt.Name = "UserNametxt";
+            this.UserNametxt.PasswordChar = '\0';
+            this.UserNametxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.UserNametxt.PlaceholderText = "اسم المستخدم";
+            this.UserNametxt.SelectedText = "";
+            this.UserNametxt.Size = new System.Drawing.Size(266, 48);
+            this.UserNametxt.TabIndex = 7;
+            this.UserNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UserNametxt.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -148,91 +233,6 @@
             this.Closebtn.Text = "X";
             this.Closebtn.UseVisualStyleBackColor = true;
             this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
-            // 
-            // UserNametxt
-            // 
-            this.UserNametxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
-            this.UserNametxt.BorderRadius = 10;
-            this.UserNametxt.BorderThickness = 2;
-            this.UserNametxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.UserNametxt.DefaultText = "";
-            this.UserNametxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.UserNametxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.UserNametxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.UserNametxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.UserNametxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserNametxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UserNametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserNametxt.IconRight = global::CHS_FrontEnd.Properties.Resources.user;
-            this.UserNametxt.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.UserNametxt.Location = new System.Drawing.Point(63, 229);
-            this.UserNametxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.UserNametxt.Name = "UserNametxt";
-            this.UserNametxt.PasswordChar = '\0';
-            this.UserNametxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.UserNametxt.PlaceholderText = "اسم المستخدم";
-            this.UserNametxt.SelectedText = "";
-            this.UserNametxt.Size = new System.Drawing.Size(266, 48);
-            this.UserNametxt.TabIndex = 7;
-            this.UserNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.UserNametxt.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
-            // 
-            // passwordtxt
-            // 
-            this.passwordtxt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
-            this.passwordtxt.BorderRadius = 10;
-            this.passwordtxt.BorderThickness = 2;
-            this.passwordtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passwordtxt.DefaultText = "";
-            this.passwordtxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.passwordtxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.passwordtxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordtxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordtxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.passwordtxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordtxt.IconRight = global::CHS_FrontEnd.Properties.Resources.padlock__1_1;
-            this.passwordtxt.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.passwordtxt.Location = new System.Drawing.Point(63, 285);
-            this.passwordtxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.passwordtxt.Name = "passwordtxt";
-            this.passwordtxt.PasswordChar = '1';
-            this.passwordtxt.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.passwordtxt.PlaceholderText = "كلمة المرور";
-            this.passwordtxt.SelectedText = "";
-            this.passwordtxt.Size = new System.Drawing.Size(266, 48);
-            this.passwordtxt.TabIndex = 8;
-            this.passwordtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.guna2Button1.Location = new System.Drawing.Point(107, 361);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "دخول";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(138)))), ((int)(((byte)(195)))));
-            this.linkLabel1.Location = new System.Drawing.Point(143, 420);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 17);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "نسيت كلمة المرور";
             // 
             // frmLogin
             // 
